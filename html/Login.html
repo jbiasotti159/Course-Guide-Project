@@ -53,7 +53,7 @@
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required>
 
-            <button type="submit">Login</button>
+            <button type="button" value="Login" onClick="pasuser(this.form)">Login</button>
             <label>
               <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
@@ -87,6 +87,23 @@
             navbar.classList.remove("sticky");
           }
         }
+
+        function pasuser(form) {
+          if (form.uname.value == "Student") {
+            if (form.psw.value == "student123") {
+              location = "MainScreenStudent.html"
+            } else {
+              alert("Invalid")
+            }
+          } else if (form.uname.value == "Advisor") {
+            if (form.psw.value == "advisor123") {
+              location = "CourseSelection.html"
+            } else {
+              alert("Invalid")
+            }
+          }
+        }
+
       </script>
     </div>
   </div>
