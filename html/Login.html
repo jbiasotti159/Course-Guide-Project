@@ -32,12 +32,11 @@
   <div class="jumbotron jumbotron-fluid">
     <div class="container-fluid">
       <div>
-        <h1 align="center">Welcome to</h1>
-        <h1 align="center"><strong>Quinnipiac University</strong></h1>
+        <h2 align="center">Welcome to</h2>
         <h1 align="center"><strong>Course Guide</strong></h1>
       </div>
-      <button class="button" onclick="document.getElementById('id01').style.display='block'"
-        style="width:auto;">Login</button>
+      <button class="button" id="loginBtn" onclick="document.getElementById('id01').style.display='block'"
+        style="width:auto;">Sign In</button>
 
       <div id="id01" class="modal">
         <form class="modal-content animate" action="/action_page.php" method="post">
@@ -54,7 +53,7 @@
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required>
 
-            <button type="submit">Login</button>
+            <button type="button" value="Login" onClick="pasuser(this.form)">Login</button>
             <label>
               <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
@@ -88,6 +87,23 @@
             navbar.classList.remove("sticky");
           }
         }
+
+        function pasuser(form) {
+          if (form.uname.value == "Student") {
+            if (form.psw.value == "student123") {
+              location = "MainScreenStudent.html"
+            } else {
+              alert("Invalid")
+            }
+          } else if (form.uname.value == "Advisor") {
+            if (form.psw.value == "advisor123") {
+              location = "CourseSelection.html"
+            } else {
+              alert("Invalid")
+            }
+          }
+        }
+
       </script>
     </div>
   </div>
