@@ -7,17 +7,17 @@ li a:hover {
     color: white;
 }
 body {
-    background-color: rgb(34, 39, 72);
+    background-color: white;
 }
 .logo-header{
     padding-left: 50px;
     padding-top: 30px;
     float: left;
     margin: auto;
-    background-color: #D4D4D4;
+    background-color: #00263E;
 }
 .row1 {
-    background-color: #D4D4D4;
+    background-color: #00263E;
     width: 100%;
     display: flex;
     padding: 10px;
@@ -28,8 +28,10 @@ li a {
     color: black;
 }
 #logo{
-    width: 270px;
     height: 100px;
+}
+#card{
+    background-color: black;
 }
 .col-sm{
     color: white;
