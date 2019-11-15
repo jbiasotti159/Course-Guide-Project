@@ -13,7 +13,6 @@
   <link href="../css/Login.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
 
-
 </head>
 
 <body>
@@ -93,21 +92,23 @@
             if (form.psw.value == "student123") {
               location = "MainScreenStudent.html"
             } else {
-              alert("Invalid")
+              alert("Invalid Login")
             }
           } else if (form.uname.value == "Advisor") {
             if (form.psw.value == "advisor123") {
               location = "CourseSelection.html"
             } else {
-              alert("Invalid")
+              alert("Invalid Login")
             }
+          } else if (form.uname.value != "Student" || "Advisor") {
+            alert("Invalid Login")
           }
+
         }
 
       </script>
     </div>
   </div>
-
 
 </body>
 
