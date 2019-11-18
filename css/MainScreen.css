@@ -54,6 +54,8 @@ li a {
     padding:10px;
     display: flex;
 }
+
+
 footer .main-footer{	padding: 20px 0;	background: #16283D;}
 footer ul{	padding-left: 0;	list-style: none;}
 
@@ -68,7 +70,7 @@ footer ul{	padding-left: 0;	list-style: none;}
 .footer-copyright p {	color: #969696;	margin: 2px 0 0;}
 
 /* Footer Top */
-.footer-top{	background: #252525;	padding-bottom: 30px;	margin-bottom: 30px;	border-bottom: 3px solid #222;}
+.footer-top{	background: #252525;	border-bottom: 3px solid #222;}
 
 /* Footer transparent */
 footer.transparent .footer-top, footer.transparent .main-footer{	background: transparent;}
@@ -87,13 +89,13 @@ footer.light .footer-copyright{	background: none repeat scroll 0 0 rgba(255, 255
 ====================== */
 .widget{	padding: 20px;	margin-bottom: 40px;}
 .widget.widget-last{	margin-bottom: 0px;}
-.widget.no-box{	padding: 0;	background-color: transparent;	margin-bottom: 40px;
+.widget.no-box{	padding: 0;	background-color: transparent;	margin-bottom: 10px;
 	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
 .widget.subscribe p{	margin-bottom: 18px;}
 .widget li a{	color: white;}
 .widget li a:hover{	color: #4b92dc;}
-.widget-title {margin-bottom: 20px;}
-.widget-title span {background: #839FAD none repeat scroll 0 0;display: block; height: 1px;margin-top: 25px;position: relative;width: 20%;}
+.widget-title {margin-bottom: 5px;}
+.widget-title span {background: #839FAD none repeat scroll 0 0;display: block; height: 1px;margin-top: 5px;position: relative;width: 20%;}
 .widget-title span::after {background: inherit;content: "";height: inherit;    position: absolute;top: -4px;width: 50%;}
 .widget-title.text-center span,.widget-title.text-center span::after {margin-left: auto;margin-right:auto;left: 0;right: 0;}
 .widget .badge{	float: right;	background: #7f7f7f;}
@@ -111,7 +113,7 @@ footer.light .footer-copyright{	background: none repeat scroll 0 0 rgba(255, 255
 
 ul.social-footer2 {	margin: 0;padding: 0;	width: auto;}
 ul.social-footer2 li {display: inline-block;padding: 0;}
-ul.social-footer2 li a:hover {background-color:#4b92dc;}
+ul.social-footer2 li a:hover {background-color:white;}
 ul.social-footer2 li a {display: block;	height:30px;width: 30px;text-align: center;}
 .btn{background-color: white; color:black;}
 .btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
