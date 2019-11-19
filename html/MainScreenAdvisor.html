@@ -47,7 +47,7 @@
             <div class="col-sm">
                 <h5>Advisor Name: Ruby ElKharboutly</h5>
                 <h6>Associate Professor of Software Engineering</h6>
-                <h6>Number of Advisees: 15</h6>
+                <h6>Number of Advisees: 12</h6>
             </div>
         </div>
     </div>
@@ -62,10 +62,101 @@
         crossorigin="anonymous"></script>
 
     <div class="container">
-        <div class="row">
-            Placeholder
+        <div class="row" align="center">
+            <div class="col">
+                <h4>Advisees Fall 2020</h4>
+                <table id = "adviseeTable" style="width:60%">
+                    <tr>
+                        <th>Last Name</th>
+                        <th>First Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                    </tr>
+                    <tr class='clickable-row' data-href='CourseSelection.html'>
+                        <td>Mariyappa</td>
+                        <td>Aden</td>
+                        <td>Aden.Mariyappa@qu.edu</td>
+                        <td>203-283-8347</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='CourseSelection.html'>
+                        <td>Biasotti</td>
+                        <td>Jillian</td>
+                        <td>Jillian.Biasotti@qu.edu</td>
+                        <td>203-803-1283</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='CourseSelection.html'>
+                        <td>Ruiz</td>
+                        <td>Joseph</td>
+                        <td>Joseph.Ruiz@qu.edu</td>
+                        <td>203-139-3148</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='CourseSelection.html'>
+                        <td>Jacobson</td>
+                        <td>James</td>
+                        <td>James.Jacobson@qu.edu</td>
+                        <td>203-132-4923</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='CourseSelection.html'>
+                        <td>Nam</td>
+                        <td>Philip</td>
+                        <td>Philip.Nam@qu.edu</td>
+                        <td>203-482-1482</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='CourseSelection.html'>
+                        <td>Germain</td>
+                        <td>Joey</td>
+                        <td>Joseph.Germain@qu.edu</td>
+                        <td>203-403-1492</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='CourseSelection.html'>
+                        <td>Wilkinson</td>
+                        <td>Julia</td>
+                        <td>Julia.Wilkinson@qu.edu</td>
+                        <td>203-314-8041</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='CourseSelection.html'>
+                        <td>Carballo</td>
+                        <td>Brian</td>
+                        <td>Brian.Carballo@qu.edu</td>
+                        <td>203-743-1302</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='CourseSelection.html'>
+                        <td>Sangurima</td>
+                        <td>Kevin</td>
+                        <td>Kevin.Sangurima@qu.edu</td>
+                        <td>203-322-3111</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='CourseSelection.html'>
+                        <td>Nigam</td>
+                        <td>Vishal</td>
+                        <td>Vishal.Nigam@qu.edu</td>
+                        <td>203-274-1392</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='CourseSelection.html'>
+                        <td>Smith</td>
+                        <td>Mark</td>
+                        <td>Mark.Smith@qu.edu</td>
+                        <td>203-319-1412</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='CourseSelection.html'>
+                        <td>Skywalker</td>
+                        <td>Anakin</td>
+                        <td>Anakin.Skywalker@qu.edu</td>
+                        <td>203-294-1984</td>
+                    </tr>
+
+                </table>
+            </div>
         </div>
     </div>
+
+    <script>
+        jQuery(document).ready(function($) {
+    $(".clickable-row").click(function() {
+        window.location = $(this).data("href");
+    });
+});
+    </script>
 
     <footer id="footer" class="footer-1">
         <div class="main-footer widgets-dark typo-light">
