@@ -50,9 +50,9 @@
             <input type="text" placeholder="Enter Username" name="uname" required>
 
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input id="pass" type="password" placeholder="Enter Password" name="psw" required>
 
-            <button type="button" value="Login" onClick="pasuser(this.form)">Login</button>
+            <button id="enterLogin" type="button" value="Login" onClick="pasuser(this.form)">Login</button>
             <label>
               <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
@@ -105,6 +105,14 @@
           }
 
         }
+
+        var input = document.getElementById("pass");
+        input.addEventListener("keyup", function (event) {
+          if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("enterLogin").click();
+          }
+        });
 
       </script>
     </div>
