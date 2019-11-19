@@ -85,6 +85,7 @@ button {
   background-image: url("../img/qumain.jpg");
   background-size: cover;
   background-color: #00263E;
+  background-attachment: fixed;
   margin: 0px;
   height: 100vh;
 }
