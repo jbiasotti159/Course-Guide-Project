@@ -54,11 +54,14 @@ li a {
     padding:10px;
     display: flex;
 }
-
+table {
+    margin: 20px;
+    border-radius: 12px;
+}
 table, th, td {
     border: 1px solid black;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 5px;
   }
   table tr:nth-child(even) {
     background-color: #eee;
