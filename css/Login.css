@@ -44,6 +44,7 @@ h2 {
   font-family: 'Archivo Black';font-size: 60px;
   color: white;
   text-shadow: 2px 5px 4px #000000;
+  margin-top: 130px;
 }
 
 
@@ -87,7 +88,7 @@ button {
   background-color: #00263E;
   background-attachment: fixed;
   margin: 0px;
-  height: 100vh;
+  height: 80vh;
 }
 
 .cancelbtn {
