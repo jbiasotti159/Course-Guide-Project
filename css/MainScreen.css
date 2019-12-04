@@ -9,6 +9,42 @@ li a:hover {
 body {
     background-color: white;
 }
+#incorrect {
+    background: rgba(255,0,0, 1);
+    opacity: 80%;
+}
+#correct {
+    background: rgba(76, 175, 80, 0.5);
+    
+}
+#match {
+width: 25%;
+margin: auto;
+}
+
+.legend { 
+    list-style: none; 
+    display: flex;
+    text-align: center;
+}
+.legend li { 
+    float: center; 
+    margin-right: 10px; 
+}
+.legend span { 
+    border: 1px solid #ccc; 
+    float: left; 
+    width: 12px; 
+    height: 12px; 
+    margin: 2px;
+ }
+.legend .correct { 
+    background-color: red;
+}
+.legend .incorrect { 
+    background-color:rgba(76, 175, 80, 0.5); 
+}
+
 .logo-header{
     padding-left: 50px;
     padding-top: 30px;

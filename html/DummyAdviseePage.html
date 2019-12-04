@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
         integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type=text/css href="../css/MainScreen.css">
-    <title>Advisor Home Screen</title>
+    <title>Advisee Schedule</title>
 </head>
 
 <body>
@@ -49,6 +49,57 @@
         </div>
     </div>
 
+    <div class="container" >
+        <div class="row" align="center">
+          <div class="col" >
+            <h4>Advisee Schedule Fall 2020</h4>
+            <ul class="legend" id="match">
+                <li><span class="correct" ></span> Does Not Match</li>
+                <li><span class="incorrect" ></span>Match</li>
+            </ul>
+            <table style="width:80%">
+              <tr>
+                <th>Course ID</th>
+                <th>Professor</th>
+                <th>Day</th>
+              </tr>
+              <tr id = "incorrect">
+                <td>SER 120</td>
+                <td>Professor Ruby</td>
+                <td>T/Th</td>
+              </tr>
+              <tr id = "correct">
+                <td>CSC 111</td>
+                <td>Professor Hoffman</td>
+                <td>M/W/F</td>
+              </tr>
+              <tr id = "correct">
+                <td>MA 141</td>
+                <td>Professor Nelan</td>
+                <td>M/W/F</td>
+              </tr>
+              <tr id = "correct">
+                <td>ENR 110</td>
+                <td>Professor Kile</td>
+                <td>T/Th</td>
+              </tr>
+              <tr id = "incorrect">
+                <td>EN 101</td>
+                <td>Professor Smith</td>
+                <td>M/W/F</td>
+              </tr>
+              <tr id = "correct">
+                <td>SER 120L</td>
+                <td>Professor Zack</td>
+                <td>F</td>
+              </tr>
+    
+            </table>
+            
+          </div>
+        </div>
+      </div>
+
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -58,103 +109,6 @@
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
 
-    <div class="container">
-        <div class="row" align="center">
-            <div class="col">
-                <h4>Advisees Fall 2020</h4>
-                <table id = "adviseeTable" style="width:60%">
-                    <tr>
-                        <th>Last Name</th>
-                        <th>First Name</th>
-                        <th>Email</th>
-                        <th>Phone Number</th>
-                    </tr>
-                    <tr class='clickable-row' data-href='DummyAdviseePage.html'>
-                        <td>Mariyappa</td>
-                        <td>Aden</td>
-                        <td>Aden.Mariyappa@qu.edu</td>
-                        <td>203-283-8347</td>
-                    </tr>
-                    <tr class='clickable-row' data-href='DummyAdviseePage.html'>
-                        <td>Biasotti</td>
-                        <td>Jillian</td>
-                        <td>Jillian.Biasotti@qu.edu</td>
-                        <td>203-803-1283</td>
-                    </tr>
-                    <tr class='clickable-row' data-href='DummyAdviseePage.html'>
-                        <td>Ruiz</td>
-                        <td>Joseph</td>
-                        <td>Joseph.Ruiz@qu.edu</td>
-                        <td>203-139-3148</td>
-                    </tr>
-                    <tr class='clickable-row' data-href='DummyAdviseePage.html'>
-                        <td>Jacobson</td>
-                        <td>James</td>
-                        <td>James.Jacobson@qu.edu</td>
-                        <td>203-132-4923</td>
-                    </tr>
-                    <tr class='clickable-row' data-href='DummyAdviseePage.html'>
-                        <td>Nam</td>
-                        <td>Philip</td>
-                        <td>Philip.Nam@qu.edu</td>
-                        <td>203-482-1482</td>
-                    </tr>
-                    <tr class='clickable-row' data-href='DummyAdviseePage.html'>
-                        <td>Germain</td>
-                        <td>Joey</td>
-                        <td>Joseph.Germain@qu.edu</td>
-                        <td>203-403-1492</td>
-                    </tr>
-                    <tr class='clickable-row' data-href='DummyAdviseePage.html'>
-                        <td>Wilkinson</td>
-                        <td>Julia</td>
-                        <td>Julia.Wilkinson@qu.edu</td>
-                        <td>203-314-8041</td>
-                    </tr>
-                    <tr class='clickable-row' data-href='DummyAdviseePage.html'>
-                        <td>Carballo</td>
-                        <td>Brian</td>
-                        <td>Brian.Carballo@qu.edu</td>
-                        <td>203-743-1302</td>
-                    </tr>
-                    <tr class='clickable-row' data-href='DummyAdviseePage.html'>
-                        <td>Sangurima</td>
-                        <td>Kevin</td>
-                        <td>Kevin.Sangurima@qu.edu</td>
-                        <td>203-322-3111</td>
-                    </tr>
-                    <tr class='clickable-row' data-href='DummyAdviseePage.html'>
-                        <td>Nigam</td>
-                        <td>Vishal</td>
-                        <td>Vishal.Nigam@qu.edu</td>
-                        <td>203-274-1392</td>
-                    </tr>
-                    <tr class='clickable-row' data-href='DummyAdviseePage.html'>
-                        <td>Smith</td>
-                        <td>Mark</td>
-                        <td>Mark.Smith@qu.edu</td>
-                        <td>203-319-1412</td>
-                    </tr>
-                    <tr class='clickable-row' data-href='DummyAdviseePage.html'>
-                        <td>Skywalker</td>
-                        <td>Anakin</td>
-                        <td>Anakin.Skywalker@qu.edu</td>
-                        <td>203-294-1984</td>
-                    </tr>
-
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        jQuery(document).ready(function($) {
-    $(".clickable-row").click(function() {
-        window.location = $(this).data("href");
-    });
-});
-    </script>
-
     <footer id="footer" class="footer-1">
         <div class="main-footer widgets-dark typo-light">
             <div class="container">
@@ -163,7 +117,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="widget subscribe no-box">
                             <h5 class="widget-title">Course Guide<span></span></h5>
-                            <p>Created by: Jillian Biasotti, <br>Joe Ruiz, and Aden Mariyappa </p>
+                            <p>Created by: Jillian Biasotti, <br>Joe Ruiz, and Aden Mariyappa</p>
                         </div>
                     </div>
 
