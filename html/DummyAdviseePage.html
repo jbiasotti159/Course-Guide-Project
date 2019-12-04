@@ -100,6 +100,34 @@
         </div>
       </div>
 
+      <div id="id02" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close"
+              title="Close Modal">&times;</span>
+          </div>
+
+          <div class="container">
+            <label for="name"><b>Full Name</b></label>
+            <input type="text" placeholder="..." name="uname" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="..." required>
+
+            <label for="Message"><b>Message</b></label>
+            <input type="text" placeholder="..." name="uname" required>
+
+            <button id="enterLogin" type="button" value="Login"
+              onclick="document.getElementById('id02').style.display='none'">Submit</button>
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'"
+              class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -108,6 +136,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+    </body>
 
     <footer id="footer" class="footer-1">
         <div class="main-footer widgets-dark typo-light">
@@ -145,8 +174,7 @@
                         <div class="widget no-box">
                             <h5 class="widget-title">Contact Us<span></span></h5>
                             <p>Leave information and question here.</p>
-                            <a class="btn" href="#." target="_blank">Contact Us</a>
-                        </div>
+                            <a class="btn" href="#." onclick="document.getElementById('id02').style.display='block'">Contact Us</a>                        </div>
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-3">
@@ -193,6 +221,5 @@
             </div>
         </div>
     </footer>
-</body>
 
 </html>

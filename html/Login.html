@@ -12,10 +12,6 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="../css/Login.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
-
-</head>
-
-<body>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -25,6 +21,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+</head>
+
+<body>
   <div id="navbar">
     <img class="logo" src="../img/Logo.png" alt="Logo">
   </div>
@@ -65,7 +65,7 @@
           </div>
         </form>
       </div>
-      
+
       <div id="id02" class="modal">
         <form class="modal-content animate" action="/action_page.php" method="post">
           <div class="imgcontainer">
@@ -83,7 +83,8 @@
             <label for="Message"><b>Message</b></label>
             <input type="text" placeholder="..." name="uname" required>
 
-            <button id="enterLogin" type="button" value="Login" onclick="document.getElementById('id02').style.display='none'">Submit</button>
+            <button id="enterLogin" type="button" value="Login"
+              onclick="document.getElementById('id02').style.display='none'">Submit</button>
           </div>
 
           <div class="container" style="background-color:#f1f1f1">
@@ -93,7 +94,7 @@
         </form>
       </div>
 
-      
+
 
       <script>
         var modal = document.getElementById('id01');
@@ -165,16 +166,23 @@
             <h5 class="widget-title">Quick Links<span></span></h5>
             <ul class="thumbnail-widget">
               <li>
-                <div class="thumb-content"><a href="#." onclick="window.location.href = 'https://www.qu.edu';">Quinnipiac University</a></div>
+                <div class="thumb-content"><a href="#."
+                    onclick="window.location.href = 'https://www.qu.edu';">Quinnipiac University</a></div>
               </li>
               <li>
-                <div class="thumb-content"><a href="#." onclick="window.location.href = 'https://www.qu.edu/student-resources/directory.html';">Quinnipiac Directory</a></div>
+                <div class="thumb-content"><a href="#."
+                    onclick="window.location.href = 'https://www.qu.edu/student-resources/directory.html';">Quinnipiac
+                    Directory</a></div>
               </li>
               <li>
-                <div class="thumb-content"><a href="#." onclick="window.location.href = 'https://quinnipiac-csm.symplicity.com/students/?signin_tab=0';">QUCC</a></div>
+                <div class="thumb-content"><a href="#."
+                    onclick="window.location.href = 'https://quinnipiac-csm.symplicity.com/students/?signin_tab=0';">QUCC</a>
+                </div>
               </li>
               <li>
-                <div class="thumb-content"><a href="#." onclick="window.location.href = 'https://myq.quinnipiac.edu/undergraduate/Pages/default.aspx';">MyQ</a></div>
+                <div class="thumb-content"><a href="#."
+                    onclick="window.location.href = 'https://myq.quinnipiac.edu/undergraduate/Pages/default.aspx';">MyQ</a>
+                </div>
               </li>
             </ul>
           </div>
