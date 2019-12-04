@@ -65,6 +65,35 @@
           </div>
         </form>
       </div>
+      
+      <div id="id02" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close"
+              title="Close Modal">&times;</span>
+          </div>
+
+          <div class="container">
+            <label for="name"><b>Full Name</b></label>
+            <input type="text" placeholder="..." name="uname" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="..." required>
+
+            <label for="Message"><b>Message</b></label>
+            <input type="text" placeholder="..." name="uname" required>
+
+            <button id="enterLogin" type="button" value="Login" onclick="document.getElementById('id02').style.display='none'">Submit</button>
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'"
+              class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+      
 
       <script>
         var modal = document.getElementById('id01');
@@ -136,16 +165,16 @@
             <h5 class="widget-title">Quick Links<span></span></h5>
             <ul class="thumbnail-widget">
               <li>
-                <div class="thumb-content"><a href="#.">Quinnipiac University</a></div>
+                <div class="thumb-content"><a href="#." onclick="window.location.href = 'https://www.qu.edu';">Quinnipiac University</a></div>
               </li>
               <li>
-                <div class="thumb-content"><a href="#.">Quinnipiac Directory</a></div>
+                <div class="thumb-content"><a href="#." onclick="window.location.href = 'https://www.qu.edu/student-resources/directory.html';">Quinnipiac Directory</a></div>
               </li>
               <li>
-                <div class="thumb-content"><a href="#.">QUCC</a></div>
+                <div class="thumb-content"><a href="#." onclick="window.location.href = 'https://quinnipiac-csm.symplicity.com/students/?signin_tab=0';">QUCC</a></div>
               </li>
               <li>
-                <div class="thumb-content"><a href="#.">About</a></div>
+                <div class="thumb-content"><a href="#." onclick="window.location.href = 'https://myq.quinnipiac.edu/undergraduate/Pages/default.aspx';">MyQ</a></div>
               </li>
             </ul>
           </div>
@@ -154,8 +183,8 @@
         <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="widget no-box">
             <h5 class="widget-title">Contact Us<span></span></h5>
-            <p>Leave information and question here.</p>
-            <a class="btn" href="#." target="_blank">Contact Us</a>
+            <p>Leave information and questions here.</p>
+            <a class="btn" href="#." onclick="document.getElementById('id02').style.display='block'">Contact Us</a>
           </div>
         </div>
 
