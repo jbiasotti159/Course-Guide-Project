@@ -44,12 +44,6 @@ button {
 width: 25%;
 margin: auto;
 }
-#loginBtn {
-    background-color: #16283D;
-    font-family: 'Archivo Black';font-size: 30px;
-    margin-top: 50px;
-  }
-  
 
 .legend { 
     list-style: none; 
@@ -172,7 +166,7 @@ table, th, td {
     padding-top: 16px;
   }
   
-  .modal {
+  .modal1 {
     display: none;
     position: fixed;
     z-index: 1;
@@ -186,14 +180,14 @@ table, th, td {
     padding-top: 30px;
   }
   
-  .modal-content {
+  .modal-content1 {
     background-color: #fefefe;
     margin: 5% auto 15% auto;
     border: 1px solid #888;
     width: 50%; 
   }
   
-  .close {
+  .close1 {
     position: absolute;
     right: 25px;
     top: 0;
@@ -202,8 +196,8 @@ table, th, td {
     font-weight: bold;
   }
   
-  .close:hover,
-  .close:focus {
+  .close1:hover,
+  .close1:focus {
     color: red;
     cursor: pointer;
   }
