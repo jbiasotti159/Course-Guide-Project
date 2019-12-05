@@ -44,7 +44,6 @@ button {
 width: 25%;
 margin: auto;
 }
-
 .legend { 
     list-style: none; 
     display: flex;
@@ -88,6 +87,9 @@ li a {
 }
 #logo{
     height: 100px;
+}
+#bad{
+  background-color: red;
 }
 #card{
     background-color: #00263E;
