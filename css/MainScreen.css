@@ -96,6 +96,24 @@ li a {
     text-align: center;
     color: black;
 }
+#uploadButton {
+    background-color: #16283D;
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    max-width: 100px;
+    margin: auto;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+#fileUpload{
+    padding-right: 20px;
+}
 
 #logo{
     height: 100px;
@@ -166,12 +184,6 @@ form{
 }
 
 #adviseeTable tr:hover {
-  }
-  #contactModal{
-    margin-top: 200px;
-
-  }
-  #adviseeTable tr:hover {
     color: #00263E;
     background-color: #4b92dc;
     

@@ -78,7 +78,7 @@
                         <td>Aden</td>
                         <td>Aden.Mariyappa@qu.edu</td>
                         <td>203-283-8347</td>
-                        
+
 
                     </tr>
                     <tr class='clickable-row' data-href='DummyAdviseePage.html'>
@@ -86,21 +86,21 @@
                         <td>Jillian</td>
                         <td>Jillian.Biasotti@qu.edu</td>
                         <td>203-803-1283</td>
-                        
+
                     </tr>
                     <tr class='clickable-row' data-href='DummyAdviseePage.html'>
                         <td>Ruiz</td>
                         <td>Joseph</td>
                         <td>Joseph.Ruiz@qu.edu</td>
                         <td>203-139-3148</td>
-                        
+
                     </tr>
                     <tr class='clickable-row' data-href='DummyAdviseePage.html'>
                         <td>Jacobson</td>
                         <td>James</td>
                         <td>James.Jacobson@qu.edu</td>
                         <td>203-132-4923</td>
-                        
+
                     </tr>
                     <tr class='clickable-row' data-href='DummyAdviseePage.html'>
                         <td>Nam</td>
@@ -108,7 +108,7 @@
                         <td>Philip.Nam@qu.edu</td>
                         <td>203-482-1482</td>
                     </tr>
-                    <tr id = "bad" class='clickable-row' data-href='BadAdviseePage.html'>
+                    <tr id="bad" class='clickable-row' data-href='BadAdviseePage.html'>
                         <td>Germain</td>
                         <td>Joey</td>
                         <td>Joseph.Germain@qu.edu</td>
@@ -183,39 +183,30 @@
             </div>
         </form>
     </div>
+
     <div id="id03" class="modal1">
         <form class="modal-content1 animate" action="/action_page.php" method="post">
             <div class="imgcontainer1">
-                <span onclick="document.getElementById('id03').style.display='none'" class="close1"
-                    title="Close Modal">&times;</span>
-            </div>
-
+                    <span onclick="document.getElementById('id03').style.display='none'" class="close1"
+                        title="Close Modal">&times;</span>
+                </div>
             <div class="container">
-                <label for="name"><b>Full Name</b></label>
-                <input type="text" placeholder="..." name="uname" required>
-
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="..." required>
-
-                <label for="Message"><b>Message</b></label>
-                <input type="text" placeholder="..." name="uname" required>
-
-                <button id="enterLogin" type="button" value="Login"
-                    onclick="document.getElementById('id03').style.display='none'">Submit</button>
-            </div>
-
-            <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id03').style.display='none'"
-                    class="cancelbtn1">Cancel</button>
+                <form class="modal-content1 animate" enctype="multipart/form-data" id="modal_form_id" method="POST">
+                    <label id="fileUpload" for="name"><b>File Upload:</b></label>
+                    <br><input type="file" name="documents"></br>
+                    <Button1 id="uploadButton" onclick="document.getElementById('id03').style.display='none'">Enter</Button1>
+                </form>
             </div>
         </form>
     </div>
+    
     <script>
         jQuery(document).ready(function ($) {
             $(".clickable-row").click(function () {
                 window.location = $(this).data("href");
             });
         });
+
     </script>
 </body>
 <footer id="footer" class="footer-1">
