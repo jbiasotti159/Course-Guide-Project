@@ -98,10 +98,7 @@ li a {
     margin-top: 20px;
     border: solid #D4D4D4;
 }
-#contactModal{
-    margin-top: 200px;
 
-}
 #userpic{
     margin-left: 20px;
 }
@@ -116,8 +113,11 @@ li a {
     padding:10px;
     display: flex;
 }
+h4{
+  padding-top: 20px;
+}
 table {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     margin: 20px;
     border-radius: 12px;
 }
@@ -136,6 +136,10 @@ table, th, td {
     color: white;
     background-color: #00263E;
     
+  }
+  #contactModal{
+    margin-top: 200px;
+
   }
   #adviseeTable tr:hover {
     color: #00263E;
