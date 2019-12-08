@@ -7,6 +7,17 @@ input[type=text]{
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+.navbar{
+  background-color: #D4D4D4;
+  height:45px;
+}
+li a:hover {
+  background-color: grey;
+  color: white;
+}
+body {
+  background-color: white;
+}
 
 table {
     margin: 20px;
@@ -35,17 +46,7 @@ table, th, td {
     padding:10px;
     display: flex;
 }
-.navbar{
-    background-color: #D4D4D4;
-    height:45px;
-}
-li a:hover {
-    background-color: grey;
-    color: white;
-}
-body {
-    background-color: white;
-}
+
 .logo-header{
     padding-left: 50px;
     padding-top: 30px;
