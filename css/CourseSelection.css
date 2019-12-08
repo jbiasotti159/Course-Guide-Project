@@ -64,6 +64,19 @@ li a {
     text-align: center;
     color: black;
 }
+button {
+    background-color: #16283D;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    border-radius: 12px;
+  }
+  
 #logo{
     height: 100px;
 }
@@ -73,33 +86,33 @@ li a {
 .row{
     padding-top: 50px;
 }
-.cancelbtn {
+.cancelbtn1 {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
-  }
+}
   
-  .imgcontainer {
+.imgcontainer1 {
     text-align: center;
     margin: 24px 0 12px 0;
     position: relative;
-  }
+}
   
-  img.avatar {
+img.avatar {
     width: 20%;
     border-radius: 30%;
-  }
+}
   
-  .container {
+.container {
     padding: 16px;
-  }
+}
   
-  span.psw {
+span.psw {
     float: right;
     padding-top: 16px;
-  }
+}
   
-  .modal1 {
+.modal1 {
     display: none;
     position: fixed;
     z-index: 1;
@@ -111,29 +124,29 @@ li a {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
     padding-top: 30px;
-  }
+}
   
-  .modal-content1 {
+.modal-content1 {
     background-color: #fefefe;
     margin: 5% auto 15% auto;
     border: 1px solid #888;
     width: 50%; 
-  }
+}
   
-  .close1 {
+.close1 {
     position: absolute;
     right: 25px;
     top: 0;
     color: #000;
     font-size: 35px;
     font-weight: bold;
-  }
+}
   
-  .close1:hover,
-  .close1:focus {
+.close1:hover,
+.close1:focus {
     color: red;
     cursor: pointer;
-  }
+}
   
   /* Added Animation from W3School*/
   .animate {
@@ -157,7 +170,7 @@ li a {
        display: block;
        float: none;
     }
-    .cancelbtn {
+    .cancelbtn1 {
        width: 100%;
     }
   }
